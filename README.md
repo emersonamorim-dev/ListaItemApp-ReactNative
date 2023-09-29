@@ -77,23 +77,23 @@ Importação dos Módulos Necessários:
 O teste começa importando o React e as funções necessárias da biblioteca de testes, além do componente App que será testado.
 Bloco describe:
 
-Um bloco describe é utilizado para agrupar testes relacionados. Neste caso, todos os testes dentro deste bloco estão relacionados ao componente App.
+- Um bloco describe é utilizado para agrupar testes relacionados. Neste caso, todos os testes dentro deste bloco estão relacionados ao componente App.
 Teste Individual it:
 
-Dentro do bloco describe, há um teste it que descreve um caso de teste específico: verificar se um item pode ser adicionado à lista de compras.
+- Dentro do bloco describe, há um teste it que descreve um caso de teste específico: verificar se um item pode ser adicionado à lista de compras.
 Passos do Teste:
 Renderizar o Componente:
 
-O componente App é renderizado, e várias funções de consulta são extraídas do objeto retornado para ajudar a interagir e verificar o estado do componente.
+- O componente App é renderizado, e várias funções de consulta são extraídas do objeto retornado para ajudar a interagir e verificar o estado do componente.
 Verificar a Ausência do Item:
 
 O teste primeiro verifica se o item "Maçã" não está presente na lista de compras. Isso é feito para assegurar que o item não estava na lista antes de tentar adicioná-lo.
 Interagir com o Componente:
 
-O teste simula um usuário digitando "Maçã" no campo de texto e pressionando o botão para adicionar o item à lista de compras. Isso é feito usando as funções fireEvent.changeText e fireEvent.press.
+- O teste simula um usuário digitando "Maçã" no campo de texto e pressionando o botão para adicionar o item à lista de compras. Isso é feito usando as funções fireEvent.changeText e fireEvent.press.
 Verificar a Presença do Item:
 
-Finalmente, o teste verifica se o item "Maçã" foi adicionado à lista de compras. Se o item estiver presente, o teste passará; caso contrário, falhará.
+- Finalmente, o teste verifica se o item "Maçã" foi adicionado à lista de compras. Se o item estiver presente, o teste passará; caso contrário, falhará.
 O que está sendo testado:
 Interatividade:
 
@@ -104,5 +104,13 @@ A funcionalidade que permite adicionar um item à lista de compras.
 Renderização:
 
 Se o item adicionado é renderizado na tela.
-Conclusão:
+
+```
+npm test
+```
+
+#### Conclusão:
 Este é um teste de integração que verifica se várias partes do aplicativo estão funcionando juntas corretamente. Ele não só testa a lógica de adição mas também verifica se o item é renderizado corretamente na interface do usuário. A biblioteca @testing-library/react-native é usada por sua abordagem simples e centrada no usuário para testar componentes React Native.
+
+### Autor:
+Emerson Amorim
